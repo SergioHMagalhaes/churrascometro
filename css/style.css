@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;  
+    padding: 0;
+}
+
+
+body{
+    background-color: #ffffff;
+}
+
+header{
+    background-color: #27282C;
+    padding: 16px;
+    border-bottom: 1px solid #737380;
+    left: 80px;
+
+}
+
+nav{
+    display: flex;
+    
+}
+
+#logo{
+    margin-left: 18vw;
+    width: 70px;
+}
+ 
+
+#menu ul{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 16vw;
+    text-align: center;
+    list-style: none;
+}
+
+#menu ul li{
+
+    display: inline;
+    padding: 10px;
+    
+}
+
+.link{
+    font: normal 17px Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.link:visited{
+    color: #FFF;
+}
+
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    color: #313232;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 25px;
+}
+
+#grelha{
+        display: block;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 35px;
+        color: #313232;
+}
+
+#people{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto ;
+}
+
+#people div{
+    padding: 40px;
+    
+    
+}
+
+#people div h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #313232;
+    font: normal 25px 'Bebas Neue',Arial, Helvetica, sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
+}
+
+.inputPeople{   
+    height: 70px;
+    width: 70px;
+    padding: 4px;
+    border: 1px solid #313232;
+    color: #313232;
+    text-align: center;
+    font: normal 25px 'Bebas Neue',Arial, Helvetica, sans-serif;
+}
+
+.peopleLogo{
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#meat{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.animals{
+    padding: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    list-style: none;
+    text-align: center;
+    color: #313232;
+    font: normal 20px 'Bebas Neue',Arial, Helvetica, sans-serif;
+}
+
+.animals p{
+    padding-bottom: 40px; 
+}
+
+.meatLogo{
+    height: 50px;
+}
+
+input[type='checkbox']{
+    height: 30px;
+    width: 30px;
+    padding: 4px;
+    border: 1px solid #313232;
+    font-size: 25px;
+    
+}
+
+.checkboxes{
+    list-style: none;
+    color: #313232;
+    font: normal 25px 'Bebas Neue',Arial, Helvetica, sans-serif;
+    
+}
+
+.checkboxes li{
+    padding: 10px;
+    
+}
+label{
+    display: block;
+    margin-left: 10px;
+    padding-bottom: 25px;
+    text-align: start;
+    color: #313232;
+    font: normal 25px 'Bebas Neue',Arial, Helvetica, sans-serif;
+
+}
+
+label input{
+    margin-right: 10px;
+    float: left;
+}
+
+#drink{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+
+
+.drinks{
+    
+    padding: 50px;
+    padding-left: 50px;
+    padding-right: 150px;
+    
+}
+
+footer{
+    padding: 20px;
+    font: normal 17px Arial, Helvetica, sans-serif;
+    color: #FFF;
+    text-align: center;
+    background-color:#27282C;;
+}
