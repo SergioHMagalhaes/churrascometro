@@ -188,6 +188,18 @@ label input{
     
 }
 
+#button{
+    display: flex;
+    justify-content: center;
+}
+
+#button input{
+    padding: 8px;
+    border: 1px solid #313232;
+    font: normal 25px 'Bebas Neue',Arial, Helvetica, sans-serif;
+    cursor:pointer;
+}
+
 footer{
     padding: 20px;
     font: normal 17px Arial, Helvetica, sans-serif;

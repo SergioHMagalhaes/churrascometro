@@ -32,18 +32,18 @@
             <div>
                 <img class="peopleLogo" src="/img/homem.svg" alt="voctor de homem">
                 <h3>HOMENS</h3>
-                <input class="inputPeople" type="text" id="inputMen" value="00">
+                <input class="inputPeople" type="number" id="inputMen" value="00">
             </div>
             <div>
                 <img class="peopleLogo" src="/img/mulher.svg" alt="vector de mulher">
                 <h3>MULHERES</h3>
-                <input class="inputPeople" type="text" id="inputWoman" value="00">
+                <input class="inputPeople" type="number" id="inputWoman" value="00">
             </div>
             <div>
 
                 <img class="peopleLogo" src="/img/crianca.svg" alt="vetor de criança">
                 <h3>CRIANÇAS</h3>
-                <input class="inputPeople" type="text" id="inputChild" value="00">
+                <input class="inputPeople" type="number" id="inputChild" value="00">
             </div>
         </div>
 
@@ -58,18 +58,17 @@
                     <p>Boi</p>
 
                     <label>
-                        <input type="checkbox" name="alcatra" id="alcatra">Alcatra
+                        <input type="checkbox" name="alcatra" class="checkBeef" id="alcatra">Alcatra
                     </label>
                     <label>
-                        <input type="checkbox" name="contrafile" id="contrafile">Contrafilé
+                        <input type="checkbox" name="contrafile" class="checkBeef" id="contrafile">Contrafilé
                     </label>
                     <label>
-                        <input type="checkbox" name="fraldinha" id="fraldinha">Fraldinha
+                        <input type="checkbox" name="fraldinha" class="checkBeef" id="fraldinha">Fraldinha
                     </label>
                     <label>
-                        <input type="checkbox" name="picanha" id="picanha">Picanha
+                        <input type="checkbox" name="picanha" class="checkBeef" id="picanha">Picanha
                     </label>
-
                 </div>
 
             </div>
@@ -79,16 +78,16 @@
                     <p>Porco</p>
 
                     <label>
-                        <input type="checkbox" name="costelinha" id="costelinha">Costelinha
+                        <input type="checkbox" name="costelinha" class="checkMeat" id="costelinha">Costelinha
                     </label>
                     <label>
-                        <input type="checkbox" name="lombo" id="lombo">Lombo
+                        <input type="checkbox" name="lombo" class="checkMeat" id="lombo">Lombo
                     </label>
                     <label>
-                        <input type="checkbox" name="pernil" id="pernil">Pernil
+                        <input type="checkbox" name="pernil" class="checkMeat" id="pernil">Pernil
                     </label>
                     <label>
-                        <input type="checkbox" name="picanhaSuina" id="picanhaSuina">Picanha Suína
+                        <input type="checkbox" name="picanhaSuina" class="checkMeat" id="picanhaSuina">Picanha Suína
                     </label>
                 </div>
 
@@ -99,13 +98,13 @@
                     <p>Frango</p>
 
                     <label>
-                        <input type="checkbox" name="coxa" id="coxa">Coxa da asa
+                        <input type="checkbox" name="coxa" class="checkMeat" id="coxa">Coxa da asa
                     </label>
                     <label>
-                        <input type="checkbox" name="asa" id="asa">Asa
+                        <input type="checkbox" name="asa" class="checkMeat" id="asa">Asa
                     </label>
                     <label>
-                        <input type="checkbox" name="Coracao" id="Coração">Coracao
+                        <input type="checkbox" name="Coracao" class="checkMeat" id="Coração">Coracao
                     </label>
 
                 </div>
@@ -152,10 +151,34 @@
     </div>
     </section>
 
+    <div id="button">
+        <input type="button" value="CALCULAR MEU CHURRAS" onclick="result()">
+    </div>
+
+    <section id="result">
+        <table>
+            <thead>
+                <tr>
+                    <td>Carnes</td>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+            <tfoot>
+                <tr id="resultTotal">
+                    
+                </tr>
+            </tfoot>
+        </table>
+
+    </section>
+
     <footer>
         <p>Desenvolvido por <a class="link" href="https://github.com/SergioHMagalhaes" target="_blank">Sérgio Henrique Magalhães.</a></p>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 
 </html>
