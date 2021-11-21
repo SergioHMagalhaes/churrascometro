@@ -11,17 +11,20 @@ function calculateMeat(p = people[0],t = 400){
     return [amountOfBeef, amountOfMeat, total]
 }
 
-
 function result(){
     //pessoas
     let result = document.getElementById('tbody')
+    let sectionResult = document.getElementById('result')
     let resultTotal = document.getElementById('resultTotal')
+    let guests = document.getElementById('guests')
+    let information = document.getElementById('information')
     result.innerHTML = ''
     resultTotal.innerHTML = ''
     let inputMen = document.getElementById('inputMen')
     let inputWoman = document.getElementById('inputWoman')
     let inputChild = document.getElementById('inputChild')
     const people = [inputMen.value, inputWoman.value, inputChild.value]
+    const totalPeople = Number(people[0]) + Number(people[1]) + Number(people[2])
 
     //carnes
     let checkBeef = document.getElementsByClassName('checkBeef')
@@ -56,12 +59,16 @@ function result(){
 
     const totalBeef = amountOfMeatMen[0] + amountOfBeefWoman[0] + amountOfMeatChild[0]
     const totalMeat = amountOfMeatMen[1] + amountOfBeefWoman[1] + amountOfMeatChild[1]
+
+
     //result 
+    guests.innerHTML = `<h2>${totalPeople} convidados</h2>`
+
     for(let i=0; i < oxMeat; i++){
     result.innerHTML += `
         <tr>
             <td>${namesBeef[i]}</td>
-            <td>${totalBeef}</td>
+            <td class="tdResult">${totalBeef}</td>
         </tr>
     `
     }
@@ -69,11 +76,19 @@ function result(){
         result.innerHTML += `
             <tr>
                 <td>${namesMeat[i]}</td>
-                <td>${totalMeat}</td>
+                <td class="tdResult">${totalMeat}</td>
             </tr>
         `
         }
+    
     resultTotal.innerHTML += `
     <td>Total</td>
-    <td>${amountOfMeatMen[2] + amountOfBeefWoman[2] + amountOfMeatChild[2]}</td>`
+    <td class="tdResult">${amountOfMeatMen[2] + amountOfBeefWoman[2] + amountOfMeatChild[2]}</td>`
+    
+    sectionResult.style.display = 'block'
+    information.style.display = 'none'
+}
+
+function reload(){
+    document.location.reload(true)
 }

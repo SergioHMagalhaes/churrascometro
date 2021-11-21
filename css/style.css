@@ -146,17 +146,10 @@ input[type='checkbox']{
     
 }
 
-.checkboxes{
-    list-style: none;
-    color: #313232;
-    font: normal 25px 'Bebas Neue',Arial, Helvetica, sans-serif;
-    
-}
+input[type='checkbox']:checked{
+    background-color: blue;
+  }
 
-.checkboxes li{
-    padding: 10px;
-    
-}
 label{
     display: block;
     margin-left: 10px;
@@ -172,33 +165,46 @@ label input{
     float: left;
 }
 
-#drink{
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-
-
-
-.drinks{
+.button{
     
-    padding: 50px;
-    padding-left: 50px;
-    padding-right: 150px;
-    
-}
-
-#button{
     display: flex;
     justify-content: center;
 }
 
-#button input{
+.button input{
     padding: 8px;
     border: 1px solid #313232;
     font: normal 25px 'Bebas Neue',Arial, Helvetica, sans-serif;
     cursor:pointer;
 }
+
+#buttonReload{
+    margin-top: 50px;
+}
+
+table{
+    width: 50%;
+    border-collapse: collapse;
+    border: 1px solid #313232;
+    margin: auto;
+    color: #313232;
+    font: normal 25px 'Bebas Neue',Arial, Helvetica, sans-serif;
+    
+    
+}
+
+.tdResult{
+    text-align: end;
+}
+
+table tr {
+    border-bottom: 1px solid #313232;
+}
+
+table td{
+    padding: 8px;
+}
+
 
 footer{
     padding: 20px;
@@ -206,4 +212,8 @@ footer{
     color: #FFF;
     text-align: center;
     background-color:#27282C;;
+}
+
+#result{
+    display: none;
 }
