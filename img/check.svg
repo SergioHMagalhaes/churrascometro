@@ -1,0 +1,12 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="25" height="25">
+	<title>Novo Projeto</title>
+	<defs>
+		<image  width="40" height="40" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoAQMAAAC2MCouAAAAAXNSR0IB2cksfwAAAANQTFRF////p8QbyAAAAAxJREFUeJxjYBhZAAAA8AABBpSJ/QAAAABJRU5ErkJggg=="/>
+		<image  width="32" height="26" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAaCAMAAADhRa4NAAAAAXNSR0IB2cksfwAAAPlQTFRFAAAA/Pz8/f39/Pz8/v7+/v7+/Pz8/v7+/v7+/v7++/v7/v7++vr6/v7++fn5/v7+/v7+/v7+/v7+/f39+fn5/v7+/f39+Pj4/v7+/v7+/f39/f39/f399PT0/v7+/v7+/f39/v7+/f396urq/v7+/v7+/f39/f39zc3N/v7+/f39/f39/v7+/v7+/f39/v7+/f39/v7+/f39/v7+/v7+/v7+/v7+/v7+/Pz8/v7+/v7+/v7+/v7+/v7+/Pz8/v7+/v7++/v7/v7+/v7+/v7++/v7/v7++vr6/v7+/v7+/v7+/v7+9fX1/v7+/v7+8vLy/v7+7u7u/v7+6OLQ7wAAAFN0Uk5TAAwUCr3PCLn/0QazBq8Eqb+l8TQCnzgCmfM8NioCk/U+6zICj/dCOgKJRkSB+UjvTnpMu/tadFAQx/1kblQOwVgMXLVgCGgEo2ydcgKVdgKNAoe7x7RTAAAA6ElEQVR4nH3RaVuCQBAH8LEMR41QPMqywyPvI1M7wEozM688vv+HER6YFWHZeTfz+z+7MAvgW4ETfzPrNHgmTEghxLAgEYkiihLnMqIocaGgXTG+x8nVBM+TKeZpnl9ekWeu7dFN1uG3d+T3D+RqLs+8UCR/LDE3LivbTaXKvOZw47i61TXImy3ytj14MrsO82e6s0ujXh/ghTWv7KPe3mmo6QPmH47f+vxCd2nDo8WMum7/dq1OGh/7j2e5E9kZ0D1uPL9y8F+OA0z/yGdcNxJzyxc+DrBcmf7v6wDrDWJH4ADbXYMz3QOSjhfedvBpugAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Background" style="display: none" href="#img1" x="0" y="0" />
+	<use id="Background" href="#img2" x="4" y="7" />
+</svg>

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="/img/grelha-logo-color.svg  " type="image/x-icon">
     <title>Churrascômetro</title>
 </head>
 
@@ -17,30 +18,29 @@
             <ul>
                 <li><a class="link" href="#pessoas">Pessoas</a></li>
                 <li><a class="link" href="#carnes">Carnes</a></li>
-                <li><a class="link" href="#bebidas">Bebidas</a></li>
+                <li><a class="link" href="https://github.com/SergioHMagalhaes">GitHub</a></li>
             </ul>
             </div>
     </header>
-
+    <img id="grelha" src="img/grelha-logo-color.svg" alt="Grelha de churrago">
     <section id="information">
         <section id="pessoas">
-            <img id="grelha" src="img/grelha-logo-color.svg" alt="Grelha de churrago">
             <h2>QUANTAS PESSOAS VÃO AO CHURRAS?</h2>
             <div id="people">
                 <div>
-                    <img class="peopleLogo" src="/img/homem.svg" alt="voctor de homem">
+                    <img class="peopleLogo" src="/img/homem.png" alt="voctor de homem">
                     <h3>HOMENS</h3>
-                    <input class="inputPeople" type="number" id="inputMen" value="00">
+                    <input class="inputPeople" type="number" id="inputMen" value="0">
                 </div>
                 <div>
-                    <img class="peopleLogo" src="/img/mulher.svg" alt="vector de mulher">
+                    <img class="peopleLogo" src="/img/mulher.png" alt="vector de mulher">
                     <h3>MULHERES</h3>
-                    <input class="inputPeople" type="number" id="inputWoman" value="00">
+                    <input class="inputPeople" type="number" id="inputWoman" value="0">
                 </div>
                 <div>
-                    <img class="peopleLogo" src="/img/crianca.svg" alt="vetor de criança">
+                    <img class="peopleLogo" src="/img/crianca.png" alt="vetor de criança">
                     <h3>CRIANÇAS</h3>
-                    <input class="inputPeople" type="number" id="inputChild" value="00">
+                    <input class="inputPeople" type="number" id="inputChild" value="0">
                 </div>
             </div>
         </section>
@@ -51,57 +51,47 @@
                     <div class="animals">
                         <span><img class="meatLogo" src="img/boi.svg" alt="boi"></span>
                         <p>Boi</p>
-                        <label>
-                            <input type="checkbox" name="alcatra" class="checkBeef" id="alcatra">Alcatra
-                        </label>
-                        <label>
-                            <input type="checkbox" name="contrafile" class="checkBeef" id="contrafile">Contrafilé
-                        </label>
-                        <label>
-                            <input type="checkbox" name="fraldinha" class="checkBeef" id="fraldinha">Fraldinha
-                        </label>
-                        <label>
-                            <input type="checkbox" name="picanha" class="checkBeef" id="picanha">Picanha
-                        </label>
+                        <input type="checkbox" name="alcatra" class="checkBeef" id="alcatra">
+                        <label for="alcatra"><span>Alcatra</span></label>
+                        <input type="checkbox" name="contrafile" class="checkBeef" id="contrafile">
+                        <label for="contrafile"><span>Contrafilé</span></label>
+                        <input type="checkbox" name="fraldinha" class="checkBeef" id="fraldinha">
+                        <label for="fraldinha"><span>Fraldinha</span></label>
+                        <input type="checkbox" name="picanha" class="checkBeef" id="picanha">
+                        <label for="picanha"><span>Picanha</span></label>
                     </div>
                 </div>
                 <div>
                     <div class="animals">
                         <span><img class="meatLogo" src="img/borco.svg" alt="porco"></span>
                         <p>Porco</p>
-                        <label>
-                            <input type="checkbox" name="costelinha" class="checkMeat" id="costelinha">Costelinha
-                        </label>
-                        <label>
-                            <input type="checkbox" name="lombo" class="checkMeat" id="lombo">Lombo
-                        </label>
-                        <label>
-                            <input type="checkbox" name="pernil" class="checkMeat" id="pernil">Pernil
-                        </label>
-                        <label>
-                            <input type="checkbox" name="picanhaSuina" class="checkMeat" id="picanhaSuina">Picanha Suína
-                        </label>
+
+                        <input type="checkbox" name="costelinha" class="checkBeef" id="costelinha">
+                        <label for="costelinha"><span>Costelinha</span></label>
+                        <input type="checkbox" name="lombo" class="checkBeef" id="lombo">
+                        <label for="lombo"><span>Lombo</span></label>
+                        <input type="checkbox" name="pernil" class="checkBeef" id="pernil">
+                        <label for="pernil"><span>Pernil</span></label>
+                        <input type="checkbox" name="picanhaSuina" class="checkBeef" id="picanhaSuina">
+                        <label for="picanhaSuina"><span>Picanha Suína</span></label>
                     </div>
                 </div>
                 <div>
                     <div class="animals">
                         <span><img class="meatLogo" src="img/galinha.svg" alt="frango"></span>
                         <p>Frango</p>
-                        <label>
-                            <input type="checkbox" name="coxa" class="checkMeat" id="coxa">Coxa da asa
-                        </label>
-                        <label>
-                            <input type="checkbox" name="asa" class="checkMeat" id="asa">Asa
-                        </label>
-                        <label>
-                            <input type="checkbox" name="Coracao" class="checkMeat" id="Coração">Coracao
-                        </label>
+                        <input type="checkbox" name="coxa" class="checkBeef" id="coxa">
+                        <label for="coxa"><span>Coxa da asa</span></label>
+                        <input type="checkbox" name="asa" class="checkBeef" id="asa">
+                        <label for="asa"><span>Asa</span></label>
+                        <input type="checkbox" name="Coracao" class="checkBeef" id="Coração">
+                        <label for="Coração"><span>Coracao</span></label>
                     </div>
                 </div>
             </div>
         </section>
         <div class="button">
-            <input type="button" value="CALCULAR MEU CHURRAS" onclick="result()">
+            <input type="button" class="button1" value="CALCULAR MEU CHURRAS" onclick="result()" onmouseenter="changeColor()">
         </div>
     </section>
 
@@ -128,7 +118,7 @@
         </table>
 
         <div id="buttonReload" class="button">
-            <input type="button" value="VAZER NOVO CALCULAR" onclick="reload()">
+            <input type="button" class="button1" value="VAZER NOVO CALCULAR" onclick="reload()" onmouseenter="changeColor()">
         </div>
 
     </section>
@@ -140,4 +130,4 @@
     <script src="js/script.js"></script>
 </body>
 
-</html>
+</html> 

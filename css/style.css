@@ -2,7 +2,7 @@
 
 *{
     margin: 0;  
-    padding: 0;
+    padding: 0; 
 }
 
 
@@ -138,6 +138,7 @@ h2{
 }
 
 input[type='checkbox']{
+    display: none;
     height: 30px;
     width: 30px;
     padding: 4px;
@@ -146,23 +147,42 @@ input[type='checkbox']{
     
 }
 
-input[type='checkbox']:checked{
-    background-color: blue;
-  }
 
 label{
     display: block;
     margin-left: 10px;
     padding-bottom: 25px;
+
     text-align: start;
     color: #313232;
     font: normal 25px 'Bebas Neue',Arial, Helvetica, sans-serif;
-
+    
 }
 
 label input{
     margin-right: 10px;
     float: left;
+}
+
+span{
+    padding-left: 16px;
+}
+
+.animals input + label:before{
+    content: '';
+    height: 20px;
+    width: 20px;
+    padding: 4px;
+    border: 1px solid #313232;
+    font-size: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 2px;
+}
+
+.animals input:checked + label:before{
+    background-image: url("../img/check.svg"), linear-gradient(45deg,#FF8618, #C93FAE);
+    background-position: center;
 }
 
 .button{
@@ -176,6 +196,8 @@ label input{
     border: 1px solid #313232;
     font: normal 25px 'Bebas Neue',Arial, Helvetica, sans-serif;
     cursor:pointer;
+    margin-bottom: 50px;
+    border-radius: 5px;
 }
 
 #buttonReload{
@@ -207,11 +229,13 @@ table td{
 
 
 footer{
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font: normal 17px Arial, Helvetica, sans-serif;
     color: #FFF;
     text-align: center;
-    background-color:#27282C;;
+    background-color:#27282C;
+
 }
 
 #result{
